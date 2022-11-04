@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang=e n dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="css/patient-style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Admin Dental Clinic Web Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Dra Marites Cruz Dental Clinic Website</title>
+
+</head>
+
+<body>
+    <div>
+
+
+        <nav>
+
+            <header>
+                <div class="logo"> <img src="logo dental.png" alt="dental logo"></div>
+                Cruz Dental Clinic
+            </header>
+
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i> Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="sched-btn">
+                        <i class="fa-solid fa-calendar-days"></i> Schedule
+                        <span class="fas fa-caret-down first"></span>
+                    </a>
+                    <ul class="sched-show">
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Schedule List</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" class="acct-btn">
+                        <i class="fa-solid fa-user-group"></i> Accounts
+                        <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="acct-show">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-tooth"></i> Dentist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-user"></i> Patients
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-users-gear"></i> Administrator
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#about"> <i class="fa-solid fa-money-bill-wave"></i> Billing </a>
+                </li>
+                <li><a href="#announcements"><i class="fa-solid fa-bullhorn"></i> Announcements </a></li>
+            </ul>
+
+
+            <div class="logout">
+                <li>
+                    <a href="#logout"> <i class="fa-solid fa-right-from-bracket"></i> Logout </a>
+                </li>
+
+            </div>
+
+
+
+        </nav>
+
+    </div>
+
+
+    <div class="body_content">
+        <h1>Patient Profile</h1>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="patient-info">
+            <img src="user-logo.png" alt="user logo">
+            <h1>Patient Name</h1>
+            patientname@gmail.com
+        </div>
+
+
+
+
+
+        <div class="patient-tabs">
+            <div class="btn-cont">
+                <button onclick="showPanel(0, '#8d1ecd')">Appointment History</button>
+                <button onclick="showPanel(1, '#8d1ecd')">Medical Background</button>
+                <button onclick="showPanel(2, '#8d1ecd')">Diagnosis</button>
+                <button onclick="showPanel(3, '#8d1ecd')">Dental Background</button>
+                <button onclick="showPanel(4, '#8d1ecd')">Prescription</button>
+                <button onclick="showPanel(5, '#8d1ecd')">Referrals</button>
+
+
+            </div>
+
+
+            <div class="tabPanel" id="appt-history"> Tab1 Appointment History </div>
+
+
+
+
+            <div class="tabPanel" id="medical-bg">
+                <div class="medicalbg-header">
+                    <h2>Medical Background </h2>
+                </div>
+                <div class="mbg-edit"><button class="mbg-button">Edit</button>
+                </div>
+
+                <div class="med-form">
+                    <form class="" onsubmit="">
+                        <div>
+                            <input type="checkbox" value="">AIDS/HIV positive
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Anemia
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Arthritis
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Artificial heart valve/s
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Artificial joint/s
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Asthma
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Back problems
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Blood disease
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Cancer
+                            <div class="mbg-describe">
+                                Describe:
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Chemo/radiation therapy
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Circulation problems
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Cortisone treatments
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Cough, persistent or bloody
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Diabetes
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Emphysema
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Epilepsy
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Fainting
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Food allergies
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Headaches, frequent/severe
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Hearing loss
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Heart murmur
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Heart, any problems
+                            <div class="mbg-describe">
+                                Describe:
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Hemophilia
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Herpes
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Hepatitis A B C D
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">High blood pressure
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Jaundice
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Jaw pain
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Kidney disease
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Liver disease
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Low blood pressure
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Mitral valve prolapse
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Nervous problems
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Pacemaker
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Psychiatric care
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Respiratory disease
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Rheumatic fever
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Seizure disorders
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Shingles
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Shortness of breath
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Sinus problems
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Skin rash
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Stroke
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Surgical implants
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Swelling, feet or ankles
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Thyroid problems
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Tuberculosis
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Ulcer/colitics/acid reflux
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Visual impairment
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">Other
+                            <div class="mbg-describe">
+                                Describe:
+                                <input type="text">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--for cancel and save buttons-->
+                <div class="mbgcancelorsave">
+                    <button class="mbg-cancelbutton">Cancel</button>
+                    <button class="mbg-savebutton">Save</button>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="tabPanel" id="diagnosis">
+                <div class="diagnosis-header">
+                    <h2>Diagnosis </h2>
+                </div>
+
+
+                <div class="top-teeth">
+                    <div class="top-button">
+                        <button>Top</button>
+                    </div>
+
+                    <div class="top">
+                        <div class="t18">
+                            <button></button>
+                            <p>18</p>
+                        </div>
+                        <div class="t17">
+                            <button></button>
+                            <p>17</p>
+                        </div>
+                        <div class="t16">
+                            <button></button>
+                            <p>16</p>
+
+                        </div>
+                        <div class="t15">
+                            <button></button>
+                            <p>15</p>
+
+                        </div>
+                        <div class="t14">
+                            <button></button>
+                            <p>14</p>
+
+                        </div>
+                        <div class="t13">
+                            <button></button>
+                            <p>13</p>
+
+                        </div>
+                        <div class="t12">
+                            <button></button>
+                            <p>12</p>
+
+                        </div>
+                        <div class="t11">
+                            <button></button>
+                            <p>11</p>
+
+                        </div>
+                        <div class="t21">
+                            <button></button>
+                            <p>21</p>
+
+                        </div>
+                        <div class="t22">
+                            <button></button>
+                            <p>22</p>
+
+                        </div>
+                        <div class="t23">
+                            <button></button>
+                            <p>23</p>
+
+                        </div>
+                        <div class="t24">
+                            <button></button>
+                            <p>24</p>
+
+                        </div>
+                        <div class="t25">
+                            <button></button>
+                            <p>25</p>
+
+                        </div>
+                        <div class="t26">
+                            <button></button>
+                            <p>26</p>
+
+                        </div>
+                        <div class="t27">
+                            <button></button>
+                            <p>27</p>
+
+                        </div>
+                        <div class="t28">
+                            <button></button>
+                            <p>28</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="bottom-teeth">
+                    <div class="bottom-button">
+                        <button>Bottom</button>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="b48">
+                            <button></button>
+                            <p>48</p>
+                        </div>
+                        <div class="b47">
+                            <button></button>
+                            <p>47</p>
+                        </div>
+                        <div class="b46">
+                            <button></button>
+                            <p>46</p>
+
+                        </div>
+                        <div class="b45">
+                            <button></button>
+                            <p>45</p>
+
+                        </div>
+                        <div class="b44">
+                            <button></button>
+                            <p>44</p>
+
+                        </div>
+                        <div class="b43">
+                            <button></button>
+                            <p>43</p>
+
+                        </div>
+                        <div class="b42">
+                            <button></button>
+                            <p>42</p>
+
+                        </div>
+                        <div class="b41">
+                            <button></button>
+                            <p>41</p>
+
+                        </div>
+                        <div class="b31">
+                            <button></button>
+                            <p>31</p>
+
+                        </div>
+                        <div class="b32">
+                            <button></button>
+                            <p>32</p>
+
+                        </div>
+                        <div class="b33">
+                            <button></button>
+                            <p>33</p>
+
+                        </div>
+                        <div class="b34">
+                            <button></button>
+                            <p>34</p>
+
+                        </div>
+                        <div class="b35">
+                            <button></button>
+                            <p>35</p>
+
+                        </div>
+                        <div class="b36">
+                            <button></button>
+                            <p>36</p>
+
+                        </div>
+                        <div class="b37">
+                            <button></button>
+                            <p>37</p>
+
+                        </div>
+                        <div class="b38">
+                            <button></button>
+                            <p>38</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="add-desc">
+                    <div class="add-btn"><a class="button" href="#divOne">Add Description</a>
+                    </div>
+                </div>
+
+                <div class="diagnosis-table">
+                    <table>
+                        <tr>
+                            <th class="date">Date</th>
+                            <th class="tooth-no">Tooth No.</th>
+                            <th class="desc">Description</th>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <!--for cancel and save buttons-->
+                <div class="dcancelorsave">
+                    <button class="d-cancelbutton">Discard</button>
+                    <button class="d-savebutton">Save</button>
+                </div>
+
+
+
+                <div class="overlay" id="divOne">
+                    <div class="wrapper">
+                        <h2>Add Description</h2><a class="close" href="#">&times;</a>
+                        <div class="content">
+                            <div class="container">
+                                <form>
+                                    <label>Description</label>
+                                    <input class="type-desc" type="text">
+                                    <input class="disc" type="submit" value="Discard">
+                                    <input class="save" type="submit" value="Save">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+            <!--for dental background tab-->
+            <div class="tabPanel" id="dental-bg">
+                <div class="dentalbg-header">
+                    <h2>Dental Background </h2>
+                </div>
+                <div class="dbg-edit"><button class="dbg-button">Edit</button>
+                </div>
+
+                <div class="form1st">
+                    <form name="form1" onsubmit="return onSubmit()">
+                        <div>
+                            Have you had any serious problem/s with any previous dental treatment?
+                            <label class="checkbox-inline">
+                            <input type="checkbox" value="">Y
+                            <input type="checkbox" value="">N
+                        </label>
+                        </div>
+                        <div>
+                            Have you had any injuries to your face, jaw, or teeeth?
+                            <label class="checkbox-inline">
+                            <input type="checkbox" value="">Y
+                            <input type="checkbox" value="">N
+                        </label>
+                        </div>
+                        <div>
+                            Do you ever feel like you have a dry mouth?
+                            <label class="checkbox-inline">
+                            <input type="checkbox" value="">Y
+                            <input type="checkbox" value="">N
+                        </label>
+                        </div>
+                        <div>
+                            Have you ever had an unusual reaction to local anaesthetic (numbing)?
+                            <label class="checkbox-inline">
+                            <input type="checkbox" value="">Y
+                            <input type="checkbox" value="">N
+                        </label>
+                        </div>
+                        <div>
+                            Do you wear full/partial dentures?
+                            <label class="checkbox-inline">
+                            <input type="checkbox" value="">Y
+                            <input type="checkbox" value="">N
+                        </label>
+                        </div>
+                        <div>
+                            Have you had any teeth replaced with a dental implant/s?
+                            <label class="checkbox-inline">
+                            <input type="checkbox" value="">Y
+                            <input type="checkbox" value="">N
+                        </label>
+                        </div>
+                        <div>
+                            Have you had any teeth replaced with a fixed bridge/s?
+                            <label class="checkbox-inline">
+                            <input type="checkbox" value="">Y
+                            <input type="checkbox" value="">N
+                        </label>
+                        </div>
+                        <div>
+                            Have you had any of the following treatments?
+                            <div class="treatments">
+                                <div>
+                                    Gum periodontal treatment
+                                    <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Y
+                                    <input type="checkbox" value="">N
+                                </label>
+                                </div>
+                                <div>
+                                    Orthodontics (braces)
+                                    <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Y
+                                    <input type="checkbox" value="">N
+                                </label>
+                                </div>
+                                <div>
+                                    Endodontics (root canal)
+                                    <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Y
+                                    <input type="checkbox" value="">N
+                                </label>
+                                </div>
+                                <div>
+                                    Extraction (teeth removed)
+                                    <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Y
+                                    <input type="checkbox" value="">N
+                                </label>
+                                </div>
+                                <div>
+                                    Bleaching/whitening
+                                    <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Y
+                                    <input type="checkbox" value="">N
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form2nd">
+                    <form class="form2" onsubmit="">
+                        Check if you have any problems with the following:
+
+                        <div class="subf2">
+                            <div>
+                                <input type="checkbox" value="">Bad breath
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Bleeding, sensitive gums
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Canker sore or cold sores
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Clicking or popping jaw: right or left
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Food trapped between teeth
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Grinding or clenching teeth
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Loose teeth
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Broken fillings
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Periodontal treatment
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Sensitivity to cold
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Sensitivty to heat
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Sensitivity to sweets
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Sensitivity to biting
+                            </div>
+                            <div>
+                                <input type="checkbox" value="">Staining
+                            </div>
+                        </div>
+
+
+
+                    </form>
+
+                </div>
+
+                <!--for cancel and save buttons-->
+                <div class="dbgcancelorsave">
+                    <button class="dbg-cancelbutton">Cancel</button>
+                    <button class="dbg-savebutton">Save</button>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <!--for e-prescription tab-->
+            <div class="tabPanel" id="e-prescription">
+                <h2>E-Prescription</h2>
+
+                <div class="personal-info">
+                    <h3>Personal Information</h3>
+                    <p class="patient-name">Name: </p>
+                    <p class="patient-age">Age: </p>
+                    <p class="patient-gender">Name: </p>
+                </div>
+
+                <div class="prescr-info">
+                    <h3>Prescription Information</h3>
+                    <p class="generic">Generic: </p>
+                    <p class="brand">Brand: </p>
+                    <p class="form">Form: </p>
+                    <p class="frequency">Frequency: </p>
+                    <p class="duration">Duration: </p>
+                </div>
+
+                <div class="prof-info">
+                    <h3>Professional Information</h3>
+                    <p class="PTR">PTR Number: </p>
+                    <p class="doctor">Doctor: </p>
+                    <p class="specialty">Specialty: </p>
+                    <p class="clinic">Clinic: </p>
+                    <p class="address">Address: </p>
+                    <p class="contact">Contact: </p>
+                </div>
+
+
+            </div>
+            <div class="tabPanel" id="referrals"> Referrals </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        $('.sched-btn').click(function() {
+            $('nav ul .sched-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.acct-btn').click(function() {
+            $('nav ul .acct-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+
+
+
+        //for patient tabs 
+        var buttons = document.querySelectorAll(".patient-tabs .btn-cont button");
+        var tabP = document.querySelectorAll(".patient-tabs .tabPanel");
+
+
+        function showPanel(panelIndex, colorCode) {
+            buttons.forEach(function(node) {
+                node.style.backgroundColor = "";
+                node.style.color = "";
+            });
+            buttons[panelIndex].style.backgroundColor = colorCode;
+            buttons[panelIndex].style.color = "white";
+
+
+            tabP.forEach(function(node) {
+                node.style.display = "none";
+            });
+            tabP[panelIndex].style.display = "block";
+        }
+        showPanel(0, '#8d1ecd');
+    </script>>
+
+</body>
+
+</html>
